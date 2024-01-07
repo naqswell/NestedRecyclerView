@@ -2,7 +2,7 @@ package com.example.myapplication.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.myapplication.Constants.UI_SHARED_FLOW_TIMEOUT
+import com.example.myapplication.presentation.Constants.UI_SHARED_FLOW_TIMEOUT
 import com.example.myapplication.data.repository.OuterItemsRepository
 import com.example.myapplication.domain.model.OuterItemDto
 import com.example.myapplication.presentation.state.OuterItemsListState
@@ -14,7 +14,6 @@ import kotlinx.coroutines.flow.SharingStarted.Companion.WhileSubscribed
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.shareIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
